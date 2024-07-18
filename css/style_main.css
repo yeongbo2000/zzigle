@@ -1,0 +1,822 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+option,
+strong,
+span,
+em,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+tr,
+img,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+/* webfont */
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheJamsil3Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil3Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* html{font-size: large;} */
+#wrap {
+    min-width: 1400px;
+    overflow: hidden;
+}
+
+body {
+    color: #555;
+    font-family: 'TheJamsil3Regular';
+    line-height: 38px;
+    font-size: 18px;
+}
+
+/* top */
+/* header*/
+#header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    height: 100px;
+    position: fixed;
+}
+
+.inner_header {
+    display: flex;
+    height: 100px;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+}
+
+.header_scrolled {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px #0000000f;
+    transition: 0.5s all linear;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    margin-right: 280px;
+
+}
+
+.nav li a {
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* nav hover */
+.nav li:hover {
+    font-family: 'TheJamsil5Bold';
+    color: #E73A2D;
+}
+
+/* link */
+.link {
+    display: flex;
+}
+
+.link li a {
+    display: block;
+    padding: 0 5px;
+    margin: 0 15px;
+}
+
+.link li {
+    position: relative;
+}
+
+/* link hover */
+.link li :hover {
+    color: #E73A2D;
+}
+
+.link li::before {
+    content: '';
+    height: 10px;
+    width: 1px;
+    background-color: #aaa;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.link li:nth-child(1)::before {
+    display: none;
+}
+
+/* banner */
+#banner {
+    background: url(../images/main_img/banner.png) center no-repeat;
+    height: 1098px;
+}
+
+.banner_title {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.banner_text {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'TheJamsil5Bold';
+}
+
+/* section1 */
+#section1 {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1_img img {
+    display: block;
+    width: 700px;
+}
+
+.section1_text {
+    width: 520px;
+}
+
+/* title */
+.title h2 {
+    color: #E73A2D;
+    font-size: 25px;
+    font-family: 'Recipekorea';
+    margin-bottom: 10px;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-family: 'Recipekorea';
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+/* section2 */
+#section2 {
+    width: 1320px;
+    margin: 100px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 670px;
+}
+
+.section2_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Section2swiper */
+.swiper {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#section2 .swiper-slide img {
+    display: block;
+    width: 310px;
+    height: 310px;
+    /* object-fit: cover; */
+}
+
+.swiper-button-next {
+    background: url(../images/main_img/arrow/arrow_right_product.png) no-repeat;
+    opacity: 0.6;
+}
+
+.swiper-button-next:hover {
+    background: url(../images/main_img/arrow/arrow_righft_product_color.png) no-repeat;
+    opacity: 1;
+}
+
+.swiper-button-prev {
+    background: url(../images/main_img/arrow/arrow_left_product.png) no-repeat;
+    opacity: 0.6;
+}
+
+.swiper-button-prev:hover {
+    background: url(../images/main_img/arrow/arrow_left_product_color.png) no-repeat;
+    opacity: 1;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+/* product_swiper_e */
+.product_text {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.product_text p {
+    font-size: 20px;
+}
+
+p.price {
+    margin-top: 12px;
+    font-size: 25px;
+    color: #E73A2D;
+    font-family: 'TheJamsil5Bold';
+}
+.heart_cart {
+    position: absolute;
+    width: 15px;
+    bottom: 15px;
+    left: 65%;
+    z-index: 99;
+    display: flex;
+    opacity: 0;
+    transition: all 0.3px linear;
+}
+
+.heart_cart >a {
+    display: block;
+    margin: 0 5px;
+    height: 15px;
+    width: 15px;
+}
+
+/* button */
+.common_btn a {
+    display: inline-block;
+    border: 3px solid #e7392d;
+    color: #555;
+    padding: 8px 45px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-family: 'TheJamsil5Bold';
+}
+
+.common_btn a:hover {
+    background-color: #E73A2D;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* section_2 hover */
+.slide_img_product:hover .heart_cart{
+    opacity: 1;
+}
+
+.slide_img_product {
+    overflow: hidden;
+    width: 310px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.slide_img_product img {
+    display: block;
+    transition: all 0.3s;
+}
+
+.slide_img_product img:hover {
+    transform: scale(1.1);
+}
+
+.heart_cart a :hover {
+    opacity: 0.6;
+}
+
+/* section3{ */
+.inner_section3 {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    height: 950px;
+}
+
+.section3_bg {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 300px;
+}
+
+.section3_charater {
+    position: absolute;
+    z-index: 0;
+    bottom: 90px;
+    left: 0;
+    width: 100%;
+}
+
+.section3_text_wrap {
+    padding: 60px 0;
+}
+
+.section3_text {
+    margin: 30px 0;
+}
+
+/* section4 */
+#section4{
+    position: relative;
+    height: 320px;
+}
+.inner_section4 {
+    margin: 0px auto;
+    width: 1920px;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    top: 0;
+    margin-left: -960px;
+}
+
+#section4 .swiper-slide {
+    align-items: center;
+}
+
+#section4 img {
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+}
+
+.swiper_button {
+    width: 950px;
+}
+
+/* section5 */
+#section5 {
+    background: url(../images/main_img/recipe_bg.png) no-repeat center;
+    height: 1010px;
+    margin: 70px 0;
+}
+
+.inner_section5 {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 170px;
+}
+
+.section5_recipe_wrap {
+    display: flex;
+}
+
+.section5_recipe_wrap img {
+    display: block;
+    width: 100%;
+}
+
+.section5_text .title {
+    margin-bottom: 30px;
+}
+
+.left_recipe {
+    width: 490px;
+    height: 650px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.left_recipe_img {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.left_recipe_img img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+.left_recipe_text {
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.left_recipe_text h2 {
+    padding: 15px 0;
+    font-family: 'TheJamsil5Bold';
+}
+
+.date {
+    display: flex;
+
+}
+
+.date p {
+    padding-right: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.date p:nth-child(1)::after {
+    position: absolute;
+    content: '';
+    background-color: #aaa;
+    width: 1px;
+    height: 15px;
+    top: 10px;
+    right: 0;
+}
+
+.right_recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right_recipe li:hover .cover {
+    opacity: 1;
+}
+
+.rightbottom_recipe,
+.righttop_recipe {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.rightbottom_recipe:hover img,
+.righttop_recipe:hover img {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #000000ae;
+    opacity: 0;
+    transition: 0.5s all linear;
+}
+
+.cover_text {
+    color: #fff;
+    opacity: 1;
+    padding: 120px 0px 50px 30px;
+}
+
+/* secton6 */
+#section6 {
+    position: relative;
+    height: 700px;
+}
+.inner_section6{
+    width: 1920px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 100px;
+    margin-left: -960px;
+}
+.section6_title {
+    text-align: center;
+}
+
+.reviewSwiper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+    height: 400px;
+}
+
+#section6 .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+#section6 .swiper-slide {
+    text-align: left;
+    height: 300px;
+}
+
+#section6 .swiper-slide a {
+    display: block;
+    width: 450px;
+    height: 320px;
+    object-fit: cover;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+#section6 .swiper-slide h2 {
+    font-family: 'TheJamsil5Bold';
+    padding-bottom: 7px;
+}
+
+.grade {
+    color: #e7392d;
+    font-family: 'TheJamsil5Bold';
+    padding: 0 5px;
+}
+
+.swiper-slide>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide img {
+    padding-top: 2px;
+}
+
+.review_yellow a {
+    background-color: #FFF4B8;
+}
+
+.review_green a {
+    background-color: #D3EFD6;
+    margin-top: 50px;
+}
+
+/* section7 */
+#section7 {
+    background: url(../images/main_img/news_bg.png) no-repeat center bottom 30%;
+}
+
+.inner_section7 {
+    width: 1320px;
+    height: 900px;
+    margin: 120px auto;
+    position: relative;
+}
+
+.section7_title {
+    text-align: center;
+}
+
+.news_wrap {
+    position: absolute;
+    z-index: 10;
+    bottom: 280px;
+    left: 150px;
+    width: 1020px;
+    height: 310px;
+    overflow: hidden;
+    margin: auto 0;
+}
+
+.news_wrap ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.news_wrap li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news_wrap li a {
+    display: block;
+}
+
+.news_img img {
+    display: block;
+    border-radius: 20px;
+}
+
+.news_text {
+    width: 500px;
+}
+
+.news_text h2 {
+    font-family: 'TheJamsil5Bold';
+}
+
+.news_text p {
+    margin: 20px 0;
+}
+
+.news_text a {
+    font-family: 'TheJamsil5Bold';
+    display: block;
+    font-size: 20px;
+    padding: 5px 10px 5px 0px;
+}
+
+.news_character {
+    position: absolute;
+    right: 50px;
+    bottom: -40px;
+    z-index: 99;
+}
+
+.news_character img {
+    display: block;
+}
+
+/* footer */
+#footer {
+    margin-top: 100px;
+    background: url(../images/common/footer_bg.png) center top no-repeat;
+    height: 500px;
+}
+
+.inner_footer {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    padding: 150px 0;
+    align-items: top;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo a {
+    display: block;
+
+}
+
+.footer_text {
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.footer_text>p {
+    padding: 0 20px;
+}
+
+.footer_link {
+    display: flex;
+}
+
+.footer_link a {
+    display: block;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.footer_link li {
+    position: relative;
+}
+
+.footer_link li a:hover {
+    opacity: 0.6;
+    transition: all 0.3s linear;
+}
+
+.footer_link li:nth-child(1)::after {
+    display: none;
+}
+
+.footer_link li::after {
+    background-color: #aaa;
+    width: 1px;
+    height: 10px;
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.footer_adress {
+    display: flex;
+    padding: 0 20px;
+}
+
+.footer_adress p {
+    margin-right: 20px;
+}
+
+.footer_sns {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.footer_sns a {
+    display: block;
+    margin-left: 15px;
+}
+
+.footer_sns a:hover {
+    opacity: 0.6;
+    transition: all 0.3s linear;
+}
+
+/* top_btn */
+#top_btn_wrap {
+    position: fixed;
+    z-index: 700;
+    bottom: 30px;
+    right: 30px;
+    font-size: 0;
+    display: block;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+.top_btn{
+    position: absolute;
+    z-index: 800;
+    bottom: -22px;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+    opacity: 1;
+}
+.top_btn_click{
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+#top_btn_wrap:hover .top_btn_click{
+    opacity: 1;
+}
+#top_btn_wrap:hover .top_btn{
+    opacity: 0;
+}
