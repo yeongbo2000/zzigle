@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width1400px">
+    <title>ZZIGLE</title>
+    <link rel="shortcut icon" href="./images/common/favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style_sub_3.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="inner_header">
+                <div class="logo">
+                    <h1>
+                        <a href="./index.html">
+                            <img src="./images/common/logo_header.svg" alt="logo_header">
+                        </a>
+                    </h1>
+                </div>
+                <ul class="nav">
+                    <li><a href="./sub_index_1.html">찌글이야기</a></li>
+                    <li><a href="./sub_index_2-1.html">정기배송</a></li>
+                    <li><a href="./sub_index_3.html">찌글마켓 </a></li>
+                    <li><a href="./sub_index_4-1.html">찌글소식</a></li>
+                    <li><a href="./sub_index_5.html">레시피</a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">MY PAGE</a></li>
+                    <li><a href="#">CART</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- header_e -->
+        <!-- banner_s -->
+        <div id="banner">
+            <div class="banner_title" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1200">
+                <p>신상품</p>
+                <h1>어글리잼 블루베리맛
+                    <br>출시!</h1>
+            </div>
+        </div>
+        <!-- section -->
+        <div id="section">
+            <ul id="box1">
+                <li class="tab tablink opacity" onclick="openBoard(event,'Board01')">
+                    <div class="tab_img">
+                        <img src="./images/sub3_img/best.png" alt="">
+                    </div>
+                    <div class="tab_text">
+                        <p>베스트</p>
+                    </div>
+                </li>
+                <li class="tab tablink " onclick="openBoard(event,'Board02')">
+                    <div class="tab_img">
+                        <img src="./images/sub3_img/microwave.png" alt="">
+                    </div>
+                    <div class="tab_text">
+                        <p>간편렌지</p>
+                    </div>
+                </li>
+                <li class="tab tablink" onclick="openBoard(event,'Board03')">
+                    <div class="tab_img">
+                        <img src="./images/sub3_img/cooking.png" alt="">
+                    </div>
+                    <div class="tab_text">
+                        <p>간편조리</p>
+                    </div>
+                </li>
+                <li class="tab tablink " onclick="openBoard(event,'Board04')">
+                    <div class="tab_img">
+                        <img src="./images/sub3_img/dessert.png" alt="">
+                    </div>
+                    <div class="tab_text">
+                        <p>디저트</p>
+                    </div>
+                </li>
+                <li class="tab tablink" onclick="openBoard(event,'Board05')">
+                    <div class="tab_img">
+                        <img src="./images/sub3_img/goods.png" alt="">
+                    </div>
+                    <div class="tab_text">
+                        <p>찌글굿즈</p>
+                    </div>
+                </li>
+            </ul>
+            <div id="Board01" class="box1_1	board">
+                <div class="flex_box">
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/applechip_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못난이 사과씨의 바삭바삭 사과칩</p>
+                            <p class="price">10,000원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/salad_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">간편야채샐러드 토마토 & 샐러드 <br>믹스 </p>
+                            <p class="price">10,000원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img" >
+                            <a href="#" class="on">
+                                <img src="./images/product/mealkit2_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">감자듬뿍 수제비</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li ><p class="price">7,380원</p></li>
+                                <li class="sale">8,200원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/dosirock_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못생겨도 간편해! 어글리에그인헬</p>
+                            <p class="price">4,300원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/recipebook.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못생긴게 어때서? 맛만있음 됐지 머!</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li ><p class="price">14,400원</p></li>
+                                <li class="sale">16,000원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/applejuice_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">어글리주스 오가닉 케일&사과&당근</p>
+                            <p class="price">10,000원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/lemonchip_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못난이 레몬씨의 바삭바삭 레몬칩</p>
+                            <p class="price">10,000원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/shoppingbag_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">찌글 장바구니</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">8%</li>
+                                <li ><p class="price">4,876원</p></li>
+                                <li class="sale">5,300원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/kiwijam_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">어글리잼 키위맛</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li ><p class="price">5,580원</p></li>
+                                <li class="sale">6,200원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Board02" class="box1_1	board" style="display:none;">
+                <div class="flex_box">
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/dosirock_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못생겨도 간편해! 어글리에그인헬</p>
+                            <p class="price">4,300원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Board03" class="box1_1	board" style="display:none;">
+                <div class="flex_box">
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/salad_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="heart">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="cart">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">간편야채샐러드 토마토 & 샐러드 <br>믹스</p>
+                            <p class="price">3,900원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/mealkit1_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="heart">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="cart">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">우삼겹 된장찌개 밀키트</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li ><p class="price">7,380원</p></li>
+                                <li class="sale">8,200원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/mealkit2_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="heart">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="cart">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">감자듬뿍 수제비 밀키트</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li ><p class="price">7,380원</p></li>
+                                <li class="sale">8,200원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/mealkit3_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="heart">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="cart">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">밀페유나베 밀키트</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">15%</li>
+                                <li ><p class="price">12,240원</p></li>
+                                <li class="sale">14,400원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>5.0 (142)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/mealkit4_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="heart">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="cart">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">불고기 버섯전골 밀키트</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">15%</li>
+                                <li ><p class="price">11,820원</p></li>
+                                <li class="sale">13,900원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Board04" class="box1_1	board" style="display:none;">
+                <div class="flex_box">
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/applechip_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못난이 사과씨의 바삭바삭 사과칩</p>
+                            <p class="price">3,600원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/lemonchip_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못난이 레몬씨의 바삭바삭 레몬칩</p>
+                            <p class="price">3,600원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/kiwichip_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못난이 키위씨의 바삭바삭 키위칩</p>
+                            <p class="price">3,600원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/applejam_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">어글리잼 사과맛</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li ><p class="price">5,580원</p></li>
+                                <li class="sale">6,200원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/blueberryjam_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">어글리잼 블루베리맛</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li ><p class="price">5,580원</p></li>
+                                <li class="sale">6,200원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/strawberryjam_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">어글리잼 딸기맛</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li ><p class="price">5,580원</p></li>
+                                <li class="sale">6,200원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/kiwijam_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">어글리잼 키위맛<p>
+                                <ul class="price_wrap">
+                                    <li class="percentage">10%</li>
+                                    <li ><p class="price">5,580원</p></li>
+                                    <li class="sale">6,200원</li>
+                                </ul>
+                                <ul class="star">
+                                    <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                    <li>4.9 (52)</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/applejuice_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">유기농 어글리주스 사과&케일&당근
+                                <br>(190ml X 3팩)
+                            </p>
+                            <p class="price">3,800원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Board05" class="box1_1	board" style="display:none;">
+                <div class="flex_box">
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/recipebook.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못생긴게 어때서? 맛만있음 됐지 머!</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li ><p class="price">14,400원</p></li>
+                                <li class="sale">16,000원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#" class="on">
+                                <img src="./images/product/shoppingbag_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/common/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">찌글 장바구니</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">8%</li>
+                                <li ><p class="price">4,876원</p></li>
+                                <li class="sale">5,300원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <div class="inner_footer">
+                <div class="logo">
+                    <a href="#">
+                        <h1>
+                            <img src="./images/common/logo_footer.svg" alt="">
+                        </h1>
+                    </a>
+                </div>
+                <div class="footer_text">
+                    <ul class="footer_link">
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">이메일무단수집거부</a>
+                        </li>
+                        <li>
+                            <a href="#">이용안내</a>
+                        </li>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                    </ul>
+                    <div class="footer_adress">
+                        <p>회사명: (주)zzigle</p>
+                        <p>주소 : 부산 광역시 중구 중앙동</p>
+                        <p>TEL : 010-0000-0000</p>
+                    </div>
+                    <p>© 2024 못난이 농산물 주식회사. All Rights Reserved.</p>
+                </div>
+                <ul class="footer_sns">
+                    <li>
+                        <a href="#">
+                            <img src="./images/common/insta.svg" alt="insta">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/common/youtube.svg" alt="insta">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/common/kakaotalk.svg" alt="insta">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- top_btn -->
+        <div id="top_btn_wrap">
+            <div class="top_btn">
+                <img src="./images/common/top_btn.svg" alt="">
+            </div>
+            <div class="top_btn_click">
+                <img src="./images/common/top_click_btn.svg" alt="">
+            </div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+
+        <script src="./js/js_script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".productSwiper", {
+                slidesPerView: 4,
+                spaceBetween: 25,
+                centeredSlides: false,
+                loop: true,
+                autoplay: {
+                    delay: 2800,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+        <script>
+            var swiper = new Swiper(".eventSwiper", {
+                slidesPerView: 3,
+                spaceBetween: 25,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 2800,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+        <script>
+            var swiper = new Swiper(".reviewSwiper", {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                speed: 3000,
+            });
+        </script>
+
+        <script>
+            $("#top_btn_wrap").click(function () {
+                $("body,html").animate({
+                    scrollTop: 0
+                }, 500)
+            });
+        </script>
+        <script>
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $("#header").addClass("header_scrolled")
+                } else {
+                    $("#header").removeClass("header_scrolled")
+                }
+            });
+        </script>
+        <script>
+            AOS.init();
+        </script>
+</body>
