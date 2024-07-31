@@ -1,0 +1,538 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+option,
+strong,
+span,
+em,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+tr,
+img,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+/* webfont */
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheJamsil3Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil3Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* html{font-size: large;} */
+#wrap {
+    min-width: 1400px;
+    overflow: hidden;
+}
+
+body {
+    color: #555;
+    font-family: 'TheJamsil3Regular';
+    line-height: 38px;
+    font-size: 18px;
+    background-color: #FFF4B8;
+}
+
+/* top */
+/* header*/
+#header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    position: fixed;
+}
+
+.inner_header {
+    display: flex;
+    height: 100px;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+}
+
+.header_scrolled {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px #0000000f;
+    transition: 0.5s all linear;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    margin-right: 280px;
+
+}
+
+.nav li a {
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* nav hover */
+.nav li:hover {
+    font-family: 'TheJamsil5Bold';
+    color: #E73A2D;
+}
+
+/* link */
+.link {
+    display: flex;
+}
+
+.link li a {
+    display: block;
+    padding: 0 5px;
+    margin: 0 15px;
+}
+
+.link li {
+    position: relative;
+}
+
+/* link hover */
+.link li :hover {
+    color: #E73A2D;
+}
+
+.link li::before {
+    content: '';
+    height: 10px;
+    width: 1px;
+    background-color: #aaa;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.link li:nth-child(1)::before {
+    display: none;
+}
+
+/* banner */
+#banner {
+    background: url(../images/sub2_img/delivery_banner.png) center no-repeat;
+    height: 850px;
+}
+
+.banner_title {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 270px;
+}
+
+.banner_title p {
+    font-size: 30px;
+    padding-bottom: 55px;
+}
+
+.banner_title h1 {
+    font-size: 75px;
+    font-family: 'Recipekorea';
+}
+
+/* btn */
+.apply_btn {
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.apply_btn a {
+    display: inline-block;
+    border: 3px solid #e7392d;
+    color: #555;
+    padding: 8px 45px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-family: 'TheJamsil5Bold';
+}
+
+.apply_btn a:hover {
+    background-color: #E73A2D;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* sub_banner */
+#sub_banner {
+    width: 1320px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.banner_bg {
+    height: 330px;
+    background: url(../images/sub2_img/sub_banner_3.jpg) no-repeat center bottom;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0 0 30px #00000033;
+}
+
+.sub_menu {
+    display: flex;
+    border: #e7392d 2px solid;
+    width: 630px;
+    border-radius: 24px;
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    z-index: 99;
+    margin-left: -315px;
+    background-color: #fff;
+    box-shadow: 0 0 30px #00000033;
+}
+
+.sub_menu li a {
+    display: inline-block;
+    text-align: center;
+    width: 210px;
+    font-family: 'TheJamsil5Bold';
+    padding: 2px 0;
+}
+
+.sub_menu li:nth-child(1) {
+    border-right: #e7392d 2px solid;
+    border-radius: 24px 0 0 24px;
+}
+
+.sub_menu li:nth-child(3) {
+    border-left: #e7392d 2px solid;
+    border-radius: 0 24px 24px 0;
+    background-color: #e7392d;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+.title h2 {
+    color: #E73A2D;
+    font-size: 25px;
+    font-family: 'Recipekorea';
+    margin-bottom: 10px;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-family: 'Recipekorea';
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.sub_banner_title {
+    text-align: center;
+    padding-top: 90px;
+}
+
+/* hover */
+.sub_menu li:nth-child(1):hover {
+    background-color: #e7392d;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+.sub_menu li:nth-child(2):hover {
+    background-color: #e7392d;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+.sub_menu li:nth-child(3):hover {
+    background-color: #e7392d;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+/* container */
+.ab{color:#e7392d;}/*js제어*/
+
+#container {
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*faq*/
+.font_10 {
+    font-size: 25px;
+    font-family: 'TheJamsil5Bold';
+    padding-top: 8px;
+}
+
+.right {
+    position: relative;
+    width: 1320px;
+    padding: 10px 0;
+    float: right;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.right ul li:nth-child(1) {
+    text-align: center;
+    width: 140px;
+    float: left;
+}
+
+.right ul li:nth-child(2) {
+    width: 1070px;
+    float: left;
+}
+
+.right ul li:nth-child(3) {
+    width: 110px;
+    float: right;
+    padding-top: 17.5px
+}
+
+.right>li ul {
+    width: 100%;
+    height: 50px;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.text_info {
+    background: #ffffff;
+    text-align: left;
+    overflow: hidden;
+}
+
+.right>li .text_info {
+    display: none;
+    padding: 25px 0 30px 0;
+}
+
+.right>li .text_info {
+    width: 100%
+}
+
+.notice_line {
+    height: 1px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background: #bcbcbc;
+}
+
+.notice_bg {
+    height: 781px
+}
+
+.right .font_18 {
+    position: relative;
+    height: 50px;
+    color: #333;
+    font-size: 22px;
+}
+
+.right .font_18 .noc_po {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.turn {
+    transform: rotate(180deg);
+}
+
+.plus img {
+    transition: transform 0.5s;
+}
+
+.text_info p {
+    float: left;
+    font-size: 18px;
+}
+
+.answer {
+    width: 150px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'TheJamsil5Bold';
+    color: #e7392d;
+}
+/* footer */
+#footer {
+    margin-top: 100px;
+    background: url(../images/common/footer_bg.png) center top no-repeat;
+    height: 500px;
+}
+
+.inner_footer {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    padding: 150px 0;
+    align-items: top;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo a {
+    display: block;
+
+}
+
+.footer_text {
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.footer_text>p {
+    padding: 0 20px;
+}
+
+.footer_link {
+    display: flex;
+}
+
+.footer_link a {
+    display: block;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.footer_link li {
+    position: relative;
+}
+
+.footer_link li a:hover {
+    opacity: 0.6;
+    transition: all 0.3s linear;
+}
+
+.footer_link li:nth-child(1)::after {
+    display: none;
+}
+
+.footer_link li::after {
+    background-color: #aaa;
+    width: 1px;
+    height: 10px;
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.footer_adress {
+    display: flex;
+    padding: 0 20px;
+}
+
+.footer_adress p {
+    margin-right: 20px;
+}
+
+.footer_sns {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.footer_sns a {
+    display: block;
+    margin-left: 15px;
+}
+
+.footer_sns a:hover {
+    opacity: 0.6;
+    transition: all 0.3s linear;
+}
+
+/* top_btn */
+#top_btn_wrap {
+    position: fixed;
+    z-index: 700;
+    bottom: 30px;
+    right: 30px;
+    font-size: 0;
+    display: block;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.top_btn {
+    position: absolute;
+    z-index: 800;
+    bottom: -22px;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+    opacity: 1;
+}
+
+.top_btn_click {
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+#top_btn_wrap:hover .top_btn_click {
+    opacity: 1;
+}
+
+#top_btn_wrap:hover .top_btn {
+    opacity: 0;
+}

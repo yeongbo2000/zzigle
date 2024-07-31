@@ -1,0 +1,501 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+option,
+strong,
+span,
+em,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+tr,
+img,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+/* webfont */
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheJamsil3Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil3Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* html{font-size: large;} */
+#wrap {
+    min-width: 1400px;
+    overflow: hidden;
+}
+
+body {
+    color: #555;
+    font-family: 'TheJamsil3Regular';
+    line-height: 38px;
+    font-size: 18px;
+    background-color: #FFF4B8;
+}
+
+/* top */
+/* header*/
+#header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    position: fixed;
+}
+
+.inner_header {
+    display: flex;
+    height: 100px;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+}
+
+.header_scrolled {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px #0000000f;
+    transition: 0.5s all linear;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    margin-right: 280px;
+
+}
+
+.nav li a {
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* nav hover */
+.nav li:hover {
+    font-family: 'TheJamsil5Bold';
+    color: #E73A2D;
+}
+
+/* link */
+.link {
+    display: flex;
+}
+
+.link li a {
+    display: block;
+    padding: 0 5px;
+    margin: 0 15px;
+}
+
+.link li {
+    position: relative;
+}
+
+/* link hover */
+.link li :hover {
+    color: #E73A2D;
+}
+
+.link li::before {
+    content: '';
+    height: 10px;
+    width: 1px;
+    background-color: #aaa;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.link li:nth-child(1)::before {
+    display: none;
+}
+
+/* banner */
+#banner {
+    background: url(../images/sub4_img/news_banner.png) center no-repeat;
+    height: 806px;
+}
+
+.banner_title {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 270px;
+}
+
+.banner_title p {
+    font-size: 30px;
+    padding-bottom: 55px;
+}
+
+.banner_title h1 {
+    font-size: 75px;
+    font-family: 'Recipekorea';
+}
+
+
+/* submenu */
+
+#sub_menu_wrap{
+    position: relative;
+}
+.sub_menu {
+    display: flex;
+    border: #e7392d 2px solid;
+    width: 420px;
+    border-radius: 24px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    z-index: 509;
+    margin-left: -210px;
+    box-shadow: 0 0 30px #00000033;
+}
+.sub_menu li a {
+    display: inline-block;
+    text-align: center;
+    width: 209px;
+    font-family: 'TheJamsil5Bold';
+    padding: 2px 0;
+}
+.sub_menu li:nth-child(2) {
+    border-radius: 0 24px 24px 0;
+    background-color: #e7392d;
+    color: #fff;
+    transition: all 0.3s linear;
+    border-right: #e7392d 2px solid;
+}
+.sub_menu li:nth-child(1) {
+    border-radius: 24px 0 0 24px;
+}
+/* hover */
+.sub_menu li:nth-child(1):hover {
+    background-color: #e7392d;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+.sub_menu li:nth-child(2):hover {
+    background-color: #e7392d;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+/* container */
+
+.inner_container{
+    width: 1320px;
+    margin: 200px auto;
+}
+/* notice */
+.notice_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.notice_box a{
+    display: block;
+}
+.notice_box{
+    background-color: #ECECEC;
+    height: 80px;
+    width: 600px;
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+    padding: 0 20px;
+}
+.notice{
+    background-color: #e7392d;
+    padding: 7px 23px 7px 42px;
+    border-radius: 35px;
+    text-align: center;
+    margin-right: 30px;
+    position: relative;
+    font-family: 'TheJamsil5Bold';
+    color: #fff;
+    font-size: 20px;
+}
+.notice p::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 23%;
+    z-index: 800;
+    background-color: #fff;
+}
+/* news */
+.news_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.news_title{
+    text-align: left;
+    font-size: 30px;
+    color: #e7392d;
+    font-family: 'Recipekorea';
+    padding-left: 10px;
+}
+.new_news_box{
+    width: 860px;
+}
+.new_news{
+    margin-top: 30px;
+    overflow-y: scroll;
+    height: 1260px;
+}
+.new_news::-webkit-scrollbar{
+    width: 20px;
+    background-color: #ddd;
+    border-radius: 11px;
+}
+.new_news::-webkit-scrollbar-thumb{
+    width: 20px;
+    background-color: #e7392d;
+    border-radius: 11px;
+}
+.new_news li a{
+    width: 800px;
+    display: block;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 70px 400px 30px 50px;
+    margin-bottom: 20px;
+}
+.bg1{
+    background: url(../images/sub4_img/news_img1.jpg) no-repeat right center #ECECEC;
+}
+.bg2{
+    background: url(../images/sub4_img/news_img2.jpg) no-repeat right center #ECECEC;
+}
+.bg3{
+    background: url(../images/sub4_img/news_img3.jpg) no-repeat right center #ECECEC;
+}
+.bg4{
+    background: url(../images/sub4_img/news_img4.jpg) no-repeat right center #ECECEC;
+}
+.bg5{
+    background: url(../images/sub4_img/news_img5.jpg) no-repeat right center #ECECEC;
+}
+.recommend_news_box{
+    width: 390px;
+}
+.recommend_news {
+    margin-top: 30px;
+}
+.recommend_news li a{
+    width: 390px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    display: block;
+    padding: 248px 30px 0 30px;
+}
+.bg6{
+    background: url(../images/sub4_img/news_img6.jpg) no-repeat center top #ECECEC;
+}
+.bg7{
+    background: url(../images/sub4_img/news_img6.jpg) no-repeat center top #ECECEC;
+}
+.bg8{
+    background: url(../images/sub4_img/news_img6.jpg) no-repeat center top #ECECEC;
+}
+.new_news_text{
+    font-family: 'TheJamsil5Bold'; 
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+.recommend_news_text{
+    font-family: 'TheJamsil5Bold'; 
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.date{
+    color: #e7392d;
+}
+/* footer */
+#footer {
+    margin-top: 100px;
+    background: url(../images/common/footer_bg.png) center top no-repeat;
+    height: 500px;
+}
+
+.inner_footer {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    padding: 150px 0;
+    align-items: top;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo a {
+    display: block;
+
+}
+
+.footer_text {
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.footer_text>p {
+    padding: 0 20px;
+}
+
+.footer_link {
+    display: flex;
+}
+
+.footer_link a {
+    display: block;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.footer_link li {
+    position: relative;
+}
+
+.footer_link li a:hover {
+    opacity: 0.6;
+    transition: all 0.3s linear;
+}
+
+.footer_link li:nth-child(1)::after {
+    display: none;
+}
+
+.footer_link li::after {
+    background-color: #aaa;
+    width: 1px;
+    height: 10px;
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.footer_adress {
+    display: flex;
+    padding: 0 20px;
+}
+
+.footer_adress p {
+    margin-right: 20px;
+}
+
+.footer_sns {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.footer_sns a {
+    display: block;
+    margin-left: 15px;
+}
+
+.footer_sns a:hover {
+    opacity: 0.6;
+    transition: all 0.3s linear;
+}
+
+/* top_btn */
+#top_btn_wrap {
+    position: fixed;
+    z-index: 700;
+    bottom: 30px;
+    right: 30px;
+    font-size: 0;
+    display: block;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.top_btn {
+    position: absolute;
+    z-index: 800;
+    bottom: -22px;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+    opacity: 1;
+}
+
+.top_btn_click {
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+#top_btn_wrap:hover .top_btn_click {
+    opacity: 1;
+}
+
+#top_btn_wrap:hover .top_btn {
+    opacity: 0;
+}

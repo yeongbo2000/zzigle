@@ -1,0 +1,480 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+option,
+strong,
+span,
+em,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+tr,
+img,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+/* webfont */
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheJamsil3Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil3Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* html{font-size: large;} */
+#wrap {
+    min-width: 1400px;
+    overflow: hidden;
+}
+
+body {
+    color: #555;
+    font-family: 'TheJamsil3Regular';
+    line-height: 38px;
+    font-size: 18px;
+}
+
+/* top */
+/* header*/
+#header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    position: fixed;
+}
+
+.inner_header {
+    display: flex;
+    height: 100px;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+}
+
+.header_scrolled {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px #0000000f;
+    transition: 0.5s all linear;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    margin-right: 280px;
+
+}
+
+.nav li a {
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* nav hover */
+.nav li:hover {
+    font-family: 'TheJamsil5Bold';
+    color: #E73A2D;
+}
+
+/* link */
+.link {
+    display: flex;
+}
+
+.link li a {
+    display: block;
+    padding: 0 5px;
+    margin: 0 15px;
+}
+
+.link li {
+    position: relative;
+}
+
+/* link hover */
+.link li :hover {
+    color: #E73A2D;
+}
+
+.link li::before {
+    content: '';
+    height: 10px;
+    width: 1px;
+    background-color: #aaa;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.link li:nth-child(1)::before {
+    display: none;
+}
+
+/* banner */
+#banner {
+    background: url(../images/sub3_img/shop_banner.png) center no-repeat;
+    height: 806px;
+}
+
+.banner_title {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 270px;
+}
+
+.banner_title p {
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #E73A2D;
+    font-family: 'TheJamsil5Bold';
+}
+
+.banner_title h1 {
+    font-size: 60px;
+    font-family: 'Recipekorea';
+    color: #fff;
+    line-height: 80px;
+    text-shadow: 5px 5px 5px #00000037;
+}
+
+/* section1 */
+#section {
+	width: 1320px;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: center;
+}
+
+/*tab*/
+#box1 {
+	position: relative;
+	display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin: 55px 25px;
+}
+
+#box1>li {
+	font-size: 18px;
+	text-align: center;
+    margin: 10px 30px;
+}
+.tab {
+	cursor: pointer;
+	display: inline-block;
+}
+.tab_img{
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    overflow: hidden;
+}
+.tab_img img{
+    display: block;
+    box-shadow: 0 0 20px #00000019;
+    border-radius: 50%;
+}
+.opacity{
+    border: #E73A2D 3px solid;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    color: #E73A2D;
+    font-family: 'TheJamsil5Bold';
+}
+.tab:hover .tab_img{
+    border: #E73A2D 3px solid;
+    transition: all 0.3s linear;
+    border-radius: 50%;
+}
+.tab_text{
+    padding: 10px 0;
+}
+.tab:hover .tab_text {
+	color: #E73A2D;
+    transition: all 0.3s linear;
+    font-family: 'TheJamsil5Bold';
+}
+#box1>li.on>.box1_1 {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#box1>li>.box1_1 {
+	height: 0;
+	overflow: hidden;
+}
+
+.box1_1 {
+    width: 100%;
+	text-align: left;
+	margin: 0 auto;    
+}
+.flex_box{
+   display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+    width: 1320px;
+}
+.product{
+    margin: 20px 20px;
+    box-sizing: border-box;
+}
+.product_img {
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.product_img:hover .cart {
+    opacity: 1;
+}
+.product_img a{
+    display: block;
+    scale: 1.1;
+    transition: 0.3s all linear
+}
+.product_img:hover .on{
+    transform: scale(1.2);
+    transition: 0.3s all linear;
+}
+.cart{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    bottom: 15px;
+    left: 65%;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.cart li a {
+    display: block;
+    margin: 0 12px;
+    scale: 1.3;
+}
+.cart li:hover {
+    opacity: 0.6;
+    transition: all 0.3s linear;
+}
+.product_text{
+  padding: 30px 10px;
+}
+.product_text p{
+  font-size: 25px;
+}
+.price_wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.percentage{
+    font-family: 'TheJamsil5Bold';
+    font-size: 30px;
+    color: #E73A2D;
+    padding-right: 10px;
+}
+.p_title{
+    padding: 5px 0 25px;
+}
+p.price{
+    font-size: 28px;
+    font-family: 'TheJamsil5Bold';
+}
+.sale{
+    font-size: 22px;
+    padding-left: 10px;
+    color: #888;
+    text-decoration: line-through;
+}
+.star{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    color: #888;
+    padding: 5px 0 0 0;
+}
+.star img{
+    display: block;
+    padding-right: 5px;
+}
+/* footer */
+#footer {
+    margin-top: 100px;
+    background: url(../images/common/footer_bg.png) center top no-repeat;
+    height: 500px;
+}
+
+.inner_footer {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    padding: 150px 0;
+    align-items: top;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo a {
+    display: block;
+
+}
+
+.footer_text {
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.footer_text>p {
+    padding: 0 20px;
+}
+
+.footer_link {
+    display: flex;
+}
+
+.footer_link a {
+    display: block;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.footer_link li {
+    position: relative;
+}
+
+.footer_link li a:hover {
+    opacity: 0.6;
+    transition: all 0.3s linear;
+}
+
+.footer_link li:nth-child(1)::after {
+    display: none;
+}
+
+.footer_link li::after {
+    background-color: #aaa;
+    width: 1px;
+    height: 10px;
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.footer_adress {
+    display: flex;
+    padding: 0 20px;
+}
+
+.footer_adress p {
+    margin-right: 20px;
+}
+
+.footer_sns {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.footer_sns a {
+    display: block;
+    margin-left: 15px;
+}
+
+.footer_sns a:hover {
+    opacity: 0.6;
+    transition: all 0.3s linear;
+}
+
+/* top_btn */
+#top_btn_wrap {
+    position: fixed;
+    z-index: 700;
+    bottom: 30px;
+    right: 30px;
+    font-size: 0;
+    display: block;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+.top_btn{
+    position: absolute;
+    z-index: 800;
+    bottom: -22px;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+    opacity: 1;
+}
+.top_btn_click{
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+#top_btn_wrap:hover .top_btn_click{
+    opacity: 1;
+}
+#top_btn_wrap:hover .top_btn{
+    opacity: 0;
+}
