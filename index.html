@@ -10,7 +10,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/style_main.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/swiper.min.css">
+
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -36,9 +36,9 @@
                     <li><a href="./sub_index_5.html">레시피</a></li>
                 </ul>
                 <ul class="link">
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">MY PAGE</a></li>
-                    <li><a href="#">CART</a></li>
+                    <li><a href="javascript:return false;">LOGIN</a></li>
+                    <li><a href="javascript:return false;">MY PAGE</a></li>
+                    <li><a href="javascript:return false;">CART</a></li>
                 </ul>
             </div>
         </div>
@@ -83,171 +83,245 @@
                 <div class="swiper-wrapper">
                     <!-- 1 -->
                     <div class="swiper-slide">
-                        <a href="#">
-                            <div class="slide_img_product">
-                                <img src="./images/product/applechip_product.jpg" alt="product_1">
-                                <div class="heart_cart">
-                                    <a href="#">
+                        <div class="product_img">
+                            <a href="javascript:return false;" class="on">
+                                <img src="./images/product/applechip_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/heart.svg" alt="">
                                     </a>
-                                    <a href="#">
+                                </li>
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/cart.svg" alt="">
                                     </a>
-                                </div>
-                            </div>
-                            <div class="product_text">
-                                <p>못난이사과씨의 사과칩</p>
-                                <p class="price">10,900원</p>
-                            </div>
-
-                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못난이 사과씨의 바삭바삭 사과칩</p>
+                            <p class="price">10,000원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
                     </div>
                     <!-- 2 -->
                     <div class="swiper-slide">
-                        <a href="#">
-                            <div class="slide_img_product">
-                                <img src="./images/product/mealkit1_product.jpg" alt="product_1">
-                                <div class="heart_cart">
-                                    <a href="#">
+                        <div class="product_img">
+                            <a href="javascript:return false;" class="on">
+                                <img src="./images/product/salad_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/heart.svg" alt="">
                                     </a>
-                                    <a href="#">
+                                </li>
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/cart.svg" alt="">
                                     </a>
-                                </div>
-                            </div>
-                            <div class="product_text">
-                                <p>우삼겹 된장찌개</p>
-                                <p class="price">17,800원</p>
-                            </div>
-
-                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">간편야채샐러드 토마토 & 샐러드 <br>믹스 </p>
+                            <p class="price">10,000원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
                     </div>
                     <!-- 3 -->
                     <div class="swiper-slide">
-                        <a href="#">
-                            <div class="slide_img_product">
-                                <img src="./images/product/kiwijam_product.jpg" alt="product_1">
-                                <div class="heart_cart">
-                                    <a href="#">
+                        <div class="product_img">
+                            <a href="javascript:return false;" class="on">
+                                <img src="./images/product/mealkit2_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/heart.svg" alt="">
                                     </a>
-                                    <a href="#">
+                                </li>
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/cart.svg" alt="">
                                     </a>
-                                </div>
-                            </div>
-                            <div class="product_text">
-                                <p>어글리잼 키위맛 350g</p>
-                                <p class="price">8,800원 </p>
-                            </div>
-
-                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">감자듬뿍 수제비</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li>
+                                    <p class="price">7,380원</p>
+                                </li>
+                                <li class="sale">8,200원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
                     </div>
                     <!-- 4 -->
                     <div class="swiper-slide">
-                        <a href="#">
-                            <div class="slide_img_product">
-                                <img src="./images/product/salad_product.jpg" alt="product_1">
-                                <div class="heart_cart">
-                                    <a href="#">
+                        <div class="product_img">
+                            <a href="javascript:return false;" class="on">
+                                <img src="./images/product/dosirock_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/heart.svg" alt="">
                                     </a>
-                                    <a href="#">
+                                </li>
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/cart.svg" alt="">
                                     </a>
-                                </div>
-                            </div>
-                            <div class="product_text">
-                                <p>간편야채샐러드 토마토 & 샐러...</p>
-                                <p class="price">7,900원</p>
-                            </div>
-
-                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못생겨도 간편해! 어글리에그인헬</p>
+                            <p class="price">4,300원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
                     </div>
+                    <!-- 5 -->
                     <div class="swiper-slide">
-                        <!-- 5 -->
-                        <a href="#">
-                            <div class="slide_img_product">
-                                <img src="./images/product/shoppingbag_product.jpg" alt="product_1">
-                                <div class="heart_cart">
-                                    <a href="#">
+                        <div class="product_img">
+                            <a href="javascript:return false;" class="on">
+                                <img src="./images/product/recipebook.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/heart.svg" alt="">
                                     </a>
-                                    <a href="#">
+                                </li>
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/cart.svg" alt="">
                                     </a>
-                                </div>
-                            </div>
-                            <div class="product_text">
-                                <p>못난이사과씨의 사과칩</p>
-                                <p class="price">10,900원</p>
-                            </div>
-
-                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못생긴게 어때서? 맛만있음 됐지 머!</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">10%</li>
+                                <li>
+                                    <p class="price">14,400원</p>
+                                </li>
+                                <li class="sale">16,000원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
                     </div>
                     <!-- 6 -->
                     <div class="swiper-slide">
-                        <a href="#">
-                            <div class="slide_img_product">
-                                <img src="./images/product/blueberryjam_product.jpg" alt="product_1">
-                                <div class="heart_cart">
-                                    <a href="#">
+                        <div class="product_img">
+                            <a href="javascript:return false;" class="on">
+                                <img src="./images/product/applejuice_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/heart.svg" alt="">
                                     </a>
-                                    <a href="#">
+                                </li>
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/cart.svg" alt="">
                                     </a>
-                                </div>
-                            </div>
-                            <div class="product_text">
-                                <p>우삼겹 된장찌개</p>
-                                <p class="price">17,800원</p>
-                            </div>
-
-                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">어글리주스 오가닉 케일&사과&당근</p>
+                            <p class="price">10,000원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
                     </div>
                     <!-- 7 -->
                     <div class="swiper-slide">
-                        <a href="#">
-                            <div class="slide_img_product">
-                                <img src="./images/product/recipebook.jpg" alt="product_1">
-                                <div class="heart_cart">
-                                    <a href="#">
+                        <div class="product_img">
+                            <a href="javascript:return false;" class="on">
+                                <img src="./images/product/lemonchip_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/heart.svg" alt="">
                                     </a>
-                                    <a href="#">
+                                </li>
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/cart.svg" alt="">
                                     </a>
-                                </div>
-                            </div>
-                            <div class="product_text">
-                                <p>어글리잼 키위맛 350g</p>
-                                <p class="price">8,800원 </p>
-                            </div>
-
-                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">못난이 레몬씨의 바삭바삭 레몬칩</p>
+                            <p class="price">10,000원</p>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
                     </div>
                     <!-- 8 -->
                     <div class="swiper-slide">
-                        <a href="#">
-                            <div class="slide_img_product">
-                                <img src="./images/product/applejuice_product.jpg" alt="product_1">
-                                <div class="heart_cart">
-                                    <a href="#">
+                        <div class="product_img">
+                            <a href="javascript:return false;" class="on">
+                                <img src="./images/product/shoppingbag_product.jpg" alt="product">
+                            </a>
+                            <ul class="cart">
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/heart.svg" alt="">
                                     </a>
-                                    <a href="#">
+                                </li>
+                                <li>
+                                    <a href="javascript:return false;">
                                         <img src="./images/common/cart.svg" alt="">
                                     </a>
-                                </div>
-                            </div>
-                            <div class="product_text">
-                                <p>간편야채샐러드 토마토 & 샐러...</p>
-                                <p class="price">7,900원</p>
-                            </div>
-
-                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_text">
+                            <p class="p_title">찌글 장바구니</p>
+                            <ul class="price_wrap">
+                                <li class="percentage">8%</li>
+                                <li>
+                                    <p class="price">4,876원</p>
+                                </li>
+                                <li class="sale">5,300원</li>
+                            </ul>
+                            <ul class="star">
+                                <li><img src="./images/sub3_img/star.png" alt="star"></li>
+                                <li>4.9 (52)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-button-prev">
@@ -271,8 +345,7 @@
                 </div>
                 <div class="section3_text_wrap" lass="section3_text" data-aos="fade-right"
                     data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                    <div class="section3_title title" data-aos="fade-right" data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1500">
+                    <div class="section3_title title" data-aos="fade-right" data-aos-easing="ease-out-cubic">
                         <h2>정기배송</h2>
                         <h1>맛있고 건강하고
                             <br>환경까지 지킬 수 있다고?
@@ -300,32 +373,32 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <img src="./images/main_img/event/event_banner_1.jpg" alt="event1">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <img src="./images/main_img/event/event_banner_2.jpg" alt="event1">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <img src="./images/main_img/event/event_banner_3.jpg" alt="event1">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <img src="./images/main_img/event/event_banner_1.jpg" alt="event1">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <img src="./images/main_img/event/event_banner_2.jpg" alt="event1">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <img src="./images/main_img/event/event_banner_3.jpg" alt="event1">
                             </a>
                         </div>
@@ -351,7 +424,7 @@
                 </div>
                 <div class="section5_recipe_wrap">
                     <div class="left_recipe">
-                        <a href="#">
+                        <a href="javascript:return false;">
                             <div class="left_recipe_img"><img src="./images/main_img/recipe_img1.jpg" alt="">
                             </div>
                             <div class="left_recipe_text">
@@ -386,12 +459,13 @@
                             <div class="rightbottom_recipe">
                                 <img src="./images/main_img/recipe_img3.jpg" alt="membership">
                                 <div class="cover">
-                                    <div></div>
-                                    <div class="cover_text">
-                                        <h2>오이참치비빔밥</h2>
-                                        <div class="date">
-                                            <p>최보영</p>
-                                            <p>2024 .06. 25. 11:24</p>
+                                    <div>
+                                        <div class="cover_text">
+                                            <h2>오이참치비빔밥</h2>
+                                            <div class="date">
+                                                <p>최보영</p>
+                                                <p>2024 .06. 25. 11:24</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -415,7 +489,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide review_yellow">
                             <!-- 1 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>자취생에게 딱!</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -429,7 +503,7 @@
                         </div>
                         <div class="swiper-slide review_green">
                             <!-- 2 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>기대 이상의 품질!</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -443,7 +517,7 @@
                         </div>
                         <div class="swiper-slide review_yellow">
                             <!-- 3 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>환경 보호와 신선함을 동시에!</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -457,7 +531,7 @@
                         </div>
                         <div class="swiper-slide review_green">
                             <!-- 4 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>빠른 배송, 만족스러운 품질</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -471,7 +545,7 @@
                         </div>
                         <div class="swiper-slide review_yellow">
                             <!-- 5 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>신선한 재료로 만든 맛있는 간편식</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -487,7 +561,7 @@
                         </div>
                         <div class="swiper-slide review_green">
                             <!-- 6 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>만족스러운 첫 구매</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -501,7 +575,7 @@
                         </div>
                         <div class="swiper-slide review_yellow">
                             <!-- 7 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>못난이 농산물의 매력 발견</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -515,7 +589,7 @@
                         </div>
                         <div class="swiper-slide review_green">
                             <!-- 8 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>간편한 조리, 훌륭한 맛</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -529,7 +603,7 @@
                         </div>
                         <div class="swiper-slide review_yellow">
                             <!-- 9 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>특이한 모양, 높은 신선도</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -543,7 +617,7 @@
                         </div>
                         <div class="swiper-slide review_green">
                             <!-- 10 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>만족스러운 간편식 경험</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -557,7 +631,7 @@
                         </div>
                         <div class="swiper-slide review_yellow">
                             <!-- 11 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>맛과 가성비 모두 만족</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -571,7 +645,7 @@
                         </div>
                         <div class="swiper-slide review_green">
                             <!-- 12 -->
-                            <a href="#">
+                            <a href="javascript:return false;">
                                 <h2>걱정이 무색한 품질!</h2>
                                 <div class="date">
                                     <p>최보영</p>
@@ -624,7 +698,7 @@
                                 <p>못난이 농산물은 외형적인 이유로 판매되지 않던 농산물을 의미합니다. 그러나 이러한 농산물을 소비하는 것은 음식물 쓰레기를 줄이고, 환경 보호에 큰 기여를
                                     할 수
                                     있습니다. "못난이 농산물" 사이트는 다양한 신선한 채소와 과일을 제공하여...</p>
-                                <a href="#">더보기 ></a>
+                                <a href="javascript:return false;">더보기 ></a>
                             </div>
                         </li>
                         <li>
@@ -638,7 +712,7 @@
                                     서비스를
                                     통해 소비자들에게 큰 호응을...
                                 </p>
-                                <a href="#">더보기 ></a>
+                                <a href="javascript:return false;">더보기 ></a>
                             </div>
                         </li>
                         <li>
@@ -652,7 +726,7 @@
                                     쓰레기를
                                     줄이고 도움이 필요한 사람들에게...
                                 </p>
-                                <a href="#">더보기 ></a>
+                                <a href="javascript:return false;">더보기 ></a>
                             </div>
                         </li>
                         <li>
@@ -665,7 +739,7 @@
                                 <p>못난이 농산물로 만든 간편식은 바쁜 일상 속에서 건강한 식사를 할 수 있는 좋은 선택입니다. "못난이 농산물" 사이트는 신선한 채소와 과일을 활용한
                                     다양한
                                     간편식을 제공하여...</p>
-                                <a href="#">더보기 ></a>
+                                <a href="javascript:return false;">더보기 ></a>
                             </div>
                         </li>
                     </ul>
@@ -680,7 +754,7 @@
         <div id="footer">
             <div class="inner_footer">
                 <div class="logo">
-                    <a href="#">
+                    <a href="javascript:return false;">
                         <h1>
                             <img src="./images/common/logo_footer.svg" alt="">
                         </h1>
@@ -689,16 +763,16 @@
                 <div class="footer_text">
                     <ul class="footer_link">
                         <li>
-                            <a href="#">개인정보처리방침</a>
+                            <a href="javascript:return false;">개인정보처리방침</a>
                         </li>
                         <li>
-                            <a href="#">이메일무단수집거부</a>
+                            <a href="javascript:return false;">이메일무단수집거부</a>
                         </li>
                         <li>
-                            <a href="#">이용안내</a>
+                            <a href="javascript:return false;">이용안내</a>
                         </li>
                         <li>
-                            <a href="#">이용약관</a>
+                            <a href="javascript:return false;">이용약관</a>
                         </li>
                     </ul>
                     <div class="footer_adress">
@@ -710,17 +784,17 @@
                 </div>
                 <ul class="footer_sns">
                     <li>
-                        <a href="#">
+                        <a href="javascript:return false;">
                             <img src="./images/common/insta.svg" alt="insta">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="javascript:return false;">
                             <img src="./images/common/youtube.svg" alt="insta">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="javascript:return false;">
                             <img src="./images/common/kakaotalk.svg" alt="insta">
                         </a>
                     </li>
@@ -758,10 +832,10 @@
             spaceBetween: 25,
             centeredSlides: false,
             loop: true,
-            autoplay: {
-                delay: 2800,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 2800,
+            //     disableOnInteraction: false,
+            // },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
