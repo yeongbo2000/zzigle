@@ -30,18 +30,8 @@ swiper-container {
     list-style: none;
     padding: 0;
     z-index: 1;
-    display: block
+    display: block;
 }
-#section6.swiper,
-swiper-container {
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-    display: block
-}
-
 .swiper-vertical>.swiper-wrapper {
     flex-direction: column
 }
@@ -49,7 +39,7 @@ swiper-container {
 .swiper-wrapper {
     /* position: relative; */
     width: 100%;
-    height: 100%;
+    height: 720px;
     z-index: 1;
     display: flex;
     transition-property: transform;
@@ -74,7 +64,7 @@ swiper-container {
 swiper-slide {
     flex-shrink: 0;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     position: relative;
     transition-property: transform;
     display: block
@@ -276,10 +266,10 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     --swiper-navigation-size: 50px
 }
 
-#section2 .swiper-button-next,
-#section2 .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     position: absolute;
-    top: var(--swiper-navigation-top-offset, 29%);
+    top: var(--swiper-navigation-top-offset, 36%);
     /* 수정함!! */
     width: calc(var(--swiper-navigation-size)/ 43 * 27);
     height: 50px;
@@ -295,7 +285,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 #section4 .swiper-button-next,
 #section4 .swiper-button-prev {
     position: absolute;
-    top: var(--swiper-navigation-top-offset, 49%);
+    top: var(--swiper-navigation-top-offset, 70%);
     /* 수정함!! */
     width: calc(var(--swiper-navigation-size)/ 43 * 27);
     height: 50px;
@@ -337,15 +327,9 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     line-height: 1
 }
 
-#section2 .swiper-button-prev,
-#section2 .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 15px);
-    right: auto
-}
-
-#section4 .swiper-button-prev,
-#section4 .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 660px);
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 20px);
     right: auto
 }
 
@@ -354,15 +338,9 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     content: url(../images/left_btn.png)
 }
 
-#section2 .swiper-button-next,
-#section2 .swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, 15px);
-    left: auto
-}
-
-#section4 .swiper-button-next,
-#section .swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, 660px);
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 20px);
     left: auto
 }
 
@@ -381,7 +359,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     text-align: center;
     transition: .3s opacity;
     transform: translate3d(0, 0, 0);
-    z-index: 500
+    z-index: 100
 }
 
 .swiper-pagination.swiper-pagination-hidden {
@@ -397,7 +375,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: var(--swiper-pagination-bottom, 5px);
+    bottom: var(--swiper-pagination-bottom, 0px);
     top: var(--swiper-pagination-top, auto);
     left: 0;
     width: 100%
@@ -438,11 +416,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 }
 
 .swiper-pagination-bullet {
-    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 15px));
-    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 15px));
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 20px));
     display: inline-block;
     border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
-    background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
+    background: var(--swiper-pagination-bullet-inactive-color, #dddddd);
     opacity: var(--swiper-pagination-bullet-inactive-opacity, .6)
 }
 
@@ -466,7 +444,7 @@ button.swiper-pagination-bullet {
 .swiper-pagination-bullet-active {
     opacity: var(--swiper-pagination-bullet-opacity, 1);
     background-color: #E73A2D;
-    width: 30px;
+    width: 40px;
     border-radius: 10px;
 }
 

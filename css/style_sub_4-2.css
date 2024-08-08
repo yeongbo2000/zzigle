@@ -189,7 +189,14 @@ body {
 
 
 /* submenu */
-
+#click_guide_line{
+    position: absolute;
+    top: 600px;
+    left: 0; 
+    width: 100%;
+    z-index: 50;
+    height: 300px;
+}
 #sub_menu_wrap{
     position: relative;
 }
@@ -249,7 +256,7 @@ body {
     display: block;
 }
 .notice_box{
-    background-color: #ECECEC;
+    background-color: #ffffff;
     height: 80px;
     width: 600px;
     display: flex;
@@ -303,7 +310,7 @@ body {
 }
 .new_news::-webkit-scrollbar{
     width: 20px;
-    background-color: #ddd;
+    background-color: #ffffff;
     border-radius: 11px;
 }
 .new_news::-webkit-scrollbar-thumb{
@@ -321,19 +328,25 @@ body {
     margin-bottom: 20px;
 }
 .bg1{
-    background: url(../images/sub4_img/news_img1.jpg) no-repeat right center #ECECEC;
+    background: url(../images/sub4_img/news_img1.jpg) no-repeat right center #ffffff;
 }
 .bg2{
-    background: url(../images/sub4_img/news_img2.jpg) no-repeat right center #ECECEC;
+    background: url(../images/sub4_img/news_img2.jpg) no-repeat right center #ffffff;
 }
 .bg3{
-    background: url(../images/sub4_img/news_img3.jpg) no-repeat right center #ECECEC;
+    background: url(../images/sub4_img/news_img3.jpg) no-repeat right center #ffffff;
 }
 .bg4{
-    background: url(../images/sub4_img/news_img4.jpg) no-repeat right center #ECECEC;
+    background: url(../images/sub4_img/news_img4.jpg) no-repeat right center #ffffff;
 }
 .bg5{
-    background: url(../images/sub4_img/news_img5.jpg) no-repeat right center #ECECEC;
+    background: url(../images/sub4_img/news_img5.jpg) no-repeat right center #ffffff;
+}
+.news_contents{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
 }
 .recommend_news_box{
     width: 390px;
@@ -351,23 +364,21 @@ body {
     padding: 248px 30px 0 30px;
 }
 .bg6{
-    background: url(../images/sub4_img/news_img6.jpg) no-repeat center top #ECECEC;
+    background: url(../images/sub4_img/news_img6.jpg) no-repeat center top #ffffff;
 }
 .bg7{
-    background: url(../images/sub4_img/news_img6.jpg) no-repeat center top #ECECEC;
+    background: url(../images/sub4_img/news_img7.jpg) no-repeat center top #ffffff;
 }
 .bg8{
-    background: url(../images/sub4_img/news_img6.jpg) no-repeat center top #ECECEC;
+    background: url(../images/sub4_img/news_img8.jpg) no-repeat center top #ffffff;
 }
 .new_news_text{
     font-family: 'TheJamsil5Bold'; 
     font-size: 25px;
-    margin-bottom: 45px;
 }
 .recommend_news_text{
     font-family: 'TheJamsil5Bold'; 
     font-size: 22px;
-    margin-bottom: 15px;
 }
 .date{
     color: #e7392d;

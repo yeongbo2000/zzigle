@@ -77,7 +77,7 @@ body {
     font-family: 'TheJamsil3Regular';
     line-height: 38px;
     font-size: 18px;
-    position: relative;
+
 }
 
 /* top */
@@ -166,8 +166,8 @@ body {
 
 /* banner */
 #banner {
-    background: url(../images/sub2_img/delivery_banner.png) center no-repeat;
-    height: 850px;
+    background: url(../images/sub5_img/recipe_banner.png) center no-repeat;
+    height: 806px;
 }
 
 .banner_title {
@@ -186,296 +186,200 @@ body {
     font-size: 75px;
     font-family: 'Recipekorea';
 }
+/* section1 */
 
-/* btn */
-.apply_btn {
-    padding: 40px 0;
-    margin-bottom: 40px;
-}
-
-.apply_btn a {
-    display: inline-block;
-    border: 3px solid #e7392d;
-    color: #555;
-    padding: 8px 45px;
-    font-size: 18px;
-    border-radius: 30px;
-    font-family: 'TheJamsil5Bold';
-}
-
-.apply_btn a:hover {
-    background-color: #E73A2D;
-    color: #fff;
-    transition: 0.3s;
-}
-
-/* bg */
-#sub_2_1_bg {
-    background: url(../images/sub2_img/sub2_1_bg.png) no-repeat center bottom;
-    padding-bottom: 70px;
-}
-
-/* sub_banner */
-#sub_banner {
-    width: 1320px;
-    margin: 50px auto;
-    position: relative;
-}
-#click_guide_line{
-    position: absolute;
-    top: 600px;
-    left: 0; 
-    width: 100%;
-    z-index: 50;
-    height: 300px;
-}
-.banner_bg {
-    height: 330px;
-    background: url(../images/sub2_img/sub_banner_1.jpg) no-repeat center bottom;
-    margin: 0 auto;
-    border-radius: 30px;
-    box-shadow: 0 0 30px #00000033;
-}
-
-.sub_menu {
-    display: flex;
-    border: #e7392d 2px solid;
-    width: 630px;
-    border-radius: 24px;
-    position: absolute;
-    top: -22px;
-    left: 50%;
-    z-index: 99;
-    margin-left: -315px;
-    background-color: #fff;
-    box-shadow: 0 0 30px #00000033;
-}
-
-.sub_menu li a {
-    display: inline-block;
-    text-align: center;
-    width: 210px;
-    font-family: 'TheJamsil5Bold';
-    padding: 2px 0;
-}
-
-.sub_menu li:nth-child(1) {
-    border-right: #e7392d 2px solid;
-    border-radius: 24px 0 0 24px;
-    background-color: #e7392d;
-    color: #fff;
-    transition: all 0.3s linear
-}
-
-.sub_menu li:nth-child(3) {
-    border-left: #e7392d 2px solid;
-    border-radius: 0 24px 24px 0;
-}
-
-.title h2 {
-    color: #E73A2D;
-    font-size: 25px;
-    font-family: 'Recipekorea';
-    margin-bottom: 10px;
-}
-
-.title h1 {
-    font-size: 40px;
-    font-family: 'Recipekorea';
-    line-height: 60px;
-    margin-bottom: 20px;
-}
-
-.sub_banner_title {
-    text-align: center;
-    padding-top: 90px;
-}
-
-/* hover */
-
-.sub_menu li:nth-child(2):hover {
-    background-color: #e7392d;
-    color: #fff;
-    transition: all 0.3s linear;
-}
-
-.sub_menu li:nth-child(3):hover {
-    background-color: #e7392d;
-    color: #fff;
-    transition: all 0.3s linear;
-}
-
-/* section1{ */
-.inner_section1 {
-    width: 1320px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 475px;
-    justify-content: space-between;
-}
-
-.inner_section1 .img_wrap {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.inner_section1 .img_wrap li img {
-    border-radius: 30px;
-    display: block;
-}
-
-/* section2 */
-.inner_section2 {
-    width: 1320px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 615px;
-    justify-content: space-between;
-}
-
-.section2_contents {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.section2_img img {
-    border-radius: 30px;
-    display: block;
-}
-
-.section2_text {
-    padding: 25px 0;
-}
-
-.section2_text span {
-    font-family: 'TheJamsil5Bold';
-    font-size: 25px;
-}
-
-.line {
-    width: 2px;
-    height: 450px;
-    background-color: #ccc;
-}
-
-/* section3 */
-.inner_section3 {
-    width: 1320px;
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.section3_contents {
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-.section3_title {
-    padding: 50px 0;
-}
-
-.section3_contents li {
-    width: 270px;
-    height: 275px;
-    background-color: #fff;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-}
-
-.section3_img img {
-    display: block;
-    padding: 15px 0;
-}
-
-/* section4 */
-.inner_section4 {
-    width: 1320px;
-    margin: 100px auto;
-}
-
-.section4_title {
-    text-align: center;
-}
-
-.section4_contents {
-    display: flex;
-    justify-content: space-between;
-}
-
-.section4_contents li {
-    margin-top: 40px;
-    width: 310px;
-    height: 425px;
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 0 30px #00000033;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-    box-sizing: border-box;
-}
-
-.section4_contents img {
-    display: block;
-    border-radius: 15px;
-}
-
-.section4_text {
-    padding: 15px 5px;
-}
-
-.section4_text span {
-    font-size: 25px;
-    font-family: 'TheJamsil5Bold';
-}
-
-/* section5 */
-#section5 {
-    position: relative;
-    height: 600px;
-}
-
-.inner_section5 {
+.inner_section1{
     width: 1320px;
     margin: 120px auto;
+}
+.title p {
+    font-size: 40px;
+    font-family: 'Recipekorea';
+    padding: 50px 0;
+    text-align: center;
+    line-height: 60px;
+}
+.inner_section1_wrap{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    height: 630px;
 }
-
-.inner_section5 img {
+.inner_section1_wrap a{
     display: block;
 }
-.section5_img{
-    margin-right: 50px;
+.inner_section1_wrap img{
+    display: block;
 }
-.section5_bg {
+.right_section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top_right_section1{
+    display: flex;
+    justify-content: space-between;
+}
+.cover {
     position: absolute;
-    z-index: -10;
-    top: -100px;
-    left: 50%;
     width: 100%;
-    margin-left: -450px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #000000ae;
+    opacity: 0;
+    transition: 0.5s all linear;
+}
+.cover_wrap{
+   overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+}
+.cover_wrap:hover .cover {
+    opacity: 1;
+    
+}
+.cover_text {
+    color: #fff;
+    opacity: 1;
+    padding: 115px 0px 50px 30px;
+}
+.cover_text_L{
+    color: #fff;
+    opacity: 1;
+    padding: 230px 0px 100px 150px;
+    scale: 1.5;
+}
+.date {
+    display: flex;
+
 }
 
+.date p {
+    padding-right: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+/* section2 */
+#section2{
+    background-color: #FFF4B8;
+    height: 1110px;
+}
+.inner_section2{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 1110px;
+}
+/* swiper */
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 645px;
+    height: 650px;
+}
+.swiper-button-next {
+    background: url(../images/main_img/arrow/arrow_right_product.png) no-repeat;
+    opacity: 0.6;
+}
+
+.swiper-button-next:hover {
+    background: url(../images/main_img/arrow/arrow_righft_product_color.png) no-repeat;
+    opacity: 1;
+}
+
+.swiper-button-prev {
+    background: url(../images/main_img/arrow/arrow_left_product.png) no-repeat;
+    opacity: 0.6;
+}
+
+.swiper-button-prev:hover {
+    background: url(../images/main_img/arrow/arrow_left_product_color.png) no-repeat;
+    opacity: 1;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+.bg1{
+    background: url(../images/sub5_img/tip_1.jpg) no-repeat center top #fff;
+}
+.bg2{
+    background: url(../images/sub5_img/tip_2.jpg) no-repeat center top #fff;
+}
+.bg3{
+    background: url(../images/sub5_img/tip_3.jpg) no-repeat center top #fff;
+}
+.bg4{
+    background: url(../images/sub5_img/tip_4.jpg) no-repeat center top #fff;
+}
+.swiper-slide a{
+    width: 645px;
+    height: 640px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    display: block;
+    padding: 550px 0px 0 50px;
+}
+.tip_title p{
+    font-size: 25px;
+}
+/* section3 */
+.inner_section3{
+    width: 1320px;
+    margin: 70px auto;
+}
+.title_wrap{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.recipe_arrow a{
+ display: block;
+ padding: 0px 0px 11px 50px;
+}
+.recipe_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.recipe_wrap li{
+    width: 415px;
+    height: 550px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px #0000002e;
+    overflow: hidden;
+}
+.recipe_wrap li a{
+    display: block;
+}
+.recipe_box_1{
+   background: url(../images/sub5_img/people_recipe_1.jpg) center top no-repeat;
+   height: 380px;
+   overflow: hidden;
+}
+.recipe_box_2{
+   background: url(../images/sub5_img/people_recipe_2.jpg) center top no-repeat;
+   height: 380px;
+   overflow: hidden;
+}
+.recipe_box_3{
+   background: url(../images/sub5_img/people_recipe_3.jpg) center top no-repeat;
+   height: 380px;
+   overflow: hidden;
+}
+.recipe_text{
+    padding: 40px 0px 0px 30px;
+}
+.date{
+    margin-top: 20px;
+}
 /* footer */
 #footer {
-    margin-top: 150px;
+    margin-top: 100px;
     background: url(../images/common/footer_bg.png) center top no-repeat;
     height: 500px;
 }

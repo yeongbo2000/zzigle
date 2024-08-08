@@ -222,11 +222,14 @@ body {
     width: 135px;
     height: 135px;
     overflow: hidden;
+    box-shadow: 0 0 20px #00000041;
+    overflow: hidden;
 }
 .tab_img img{
     display: block;
-    box-shadow: 0 0 20px #00000019;
     border-radius: 50%;
+    width: 135px;
+    height: 135px;
 }
 .opacity{
     border: #E73A2D 3px solid;
@@ -240,9 +243,13 @@ body {
     border: #E73A2D 3px solid;
     transition: all 0.3s linear;
     border-radius: 50%;
+    width: 132px;
+    height: 132px;
+   
 }
 .tab_text{
     padding: 10px 0;
+    overflow: hidden;
 }
 .tab:hover .tab_text {
 	color: #E73A2D;

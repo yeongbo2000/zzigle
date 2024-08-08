@@ -215,7 +215,14 @@ body {
     margin: 50px auto;
     position: relative;
 }
-
+#click_guide_line{
+    position: absolute;
+    top: 600px;
+    left: 0; 
+    width: 100%;
+    z-index: 50;
+    height: 300px;
+}
 .banner_bg {
     height: 330px;
     background: url(../images/sub2_img/sub_banner_3.jpg) no-repeat center bottom;
@@ -323,7 +330,9 @@ body {
     background-color: #fff;
     margin-bottom: 20px;
 }
-
+.right ul li{
+    cursor: pointer;
+}
 .right ul li:nth-child(1) {
     text-align: center;
     width: 140px;

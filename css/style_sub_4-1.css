@@ -196,7 +196,14 @@ body {
     margin: 0 auto;
     height: 2600px;
 }
-
+#click_guide_line{
+    position: absolute;
+    top: 600px;
+    left: 0; 
+    width: 100%;
+    z-index: 50;
+    height: 300px;
+}
 .sub_menu {
     display: flex;
     border: #e7392d 2px solid;
